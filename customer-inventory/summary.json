@@ -1,0 +1,20 @@
+{
+  "ApplicationName": "CustomerInventoryAPI",
+  "PackageStructure": "com.example.customerinventory",
+  "Dependencies": [
+    "Spring Web",
+    "Spring Boot Starter Validation"
+  ],
+  "RestEndpoints": [
+    {
+      "Method": "GET",
+      "Path": "/api/v1/customer_profiles/{integrationId}/inventory",
+      "Description": "Return the customer inventory regarding entities referencing this customer profile's integrationId. Supports query parameters for profile, referrals, coupons, loyalty, giveaways, achievements."
+    }
+  ],
+  "DatabaseConfigurations": null,
+  "SecurityFeatures": {
+    "Authentication": "API Key via Header (api_key_v1)",
+    "Authorization": null
+  }
+}
